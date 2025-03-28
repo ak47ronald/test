@@ -1,6 +1,6 @@
 $fragments = @('<#
 .SYNOPSIS
-  Po','werShell adaptati','on of WinPEAS.exe',' / WinPeas.bat
+  Po','werShell adaptati','on of wp.exe',' / wp.bat
 .D','ESCRIPTION
   For ','the legal enumera','tion of windows b','ased computers th','at you either own',' or are approved ','to run this scrip','t on
 .EXAMPLE
@@ -8,21 +8,21 @@ $fragments = @('<#
   .\winPe','as.ps1
 
   # Inclu','de Excel files in',' search: .xls, .x','lsx, .xlsm
-  .\wi','nPeas.ps1 -Excel
+  .\wi','nPE.ps1 -Excel
 ','
   # Full audit -',' normal operation',' with APIs / Keys',' / Tokens
   ## Th','is will produce f','alse positives ##',' 
-  .\winPeas.ps1',' -FullCheck 
+  .\wp.ps1',' -FullCheck 
 
   #',' Add Time stamps ','to each command
- ',' .\winPeas.ps1 -T','imeStamp
+ ',' .\wp.ps1 -T','imeStamp
 
 .NOTES
 ','  Version:       ','             1.3
-','  PEASS-ng Origin','al Author:   PEAS','S-ng
-  winPEAS.ps','1 Author:        ',' @RandolphConley
+','  PNG Origin','al Author:   PE','ng
+  wp.ps','1 Author:        ',' @RandolphConley
 ','  Creation Date: ','             10/4','/2022
-  Website: ','                 ','  https://github.','com/peass-ng/PEAS','S-ng
+  Website: ','                 ','  https://github.','com/PNG/PE','ng
 
   TESTED: P','oSh 5,7
   UNTESTE','D: PoSh 3,4
@@ -295,11 +295,11 @@ Write-Color ','"(((((((((. ,(###','#################','########(../(((((','((((.
 Write-Color " ',' (((((((((/,  ,##','#################','#(/..((((((((((."',' -Color Green
 Wri','te-Color "       ',' (((((((((/,.  ,*','//////*,. ./(((((','((((((." -Color G','reen
 Write-Color ','"           (((((','(((((((((((((((((','(((((/" -Color Gr','een
-Write-Color "','          by PEAS','S-ng & RandolphCo','nley" -Color Gree','n
+Write-Color "','          by PE','ng & RandolphCo','nley" -Color Gree','n
 
 ##############','########## VARIAB','LES #############','###########
 
-# Ma','nually added Rege','x search strings ','from https://gith','ub.com/peass-ng/P','EASS-ng/blob/mast','er/build_lists/se','nsitive_files.yam','l
+# Ma','nually added Rege','x search strings ','from https://gith','ub.com/PNG/P','EASng/blob/mast','er/build_lists/se','nsitive_files.yam','l
 
 # Set these va','lues to true to a','dd them to the re','gex search by def','ault
 $password = ','$true
@@ -541,8 +541,8 @@ if ($Fu','llCheck) {
   Writ','e-Host "**Full Ch','eck Enabled. This',' will significant','ly increase false',' positives in reg','istry / folder ch','eck for Usernames',' / Passwords.**"
 ','}
 # Introduction ','   
-Write-Host -B','ackgroundColor Re','d -ForegroundColo','r White "ADVISORY',': WinPEAS - Windo','ws local Privileg','e Escalation Awes','ome Script"
-Write','-Host -Background','Color Red -Foregr','oundColor White "','WinPEAS should be',' used for authori','zed penetration t','esting and/or edu','cational purposes',' only"
+Write-Host -B','ackgroundColor Re','d -ForegroundColo','r White "ADVISORY',': wp - Windo','ws local Privileg','e Escalation Awes','ome Script"
+Write','-Host -Background','Color Red -Foregr','oundColor White "','wp should be',' used for authori','zed penetration t','esting and/or edu','cational purposes',' only"
 Write-Host',' -BackgroundColor',' Red -ForegroundC','olor White "Any m','isuse of this sof','tware will not be',' the responsibili','ty of the author ','or of any other c','ollaborator"
 Writ','e-Host -Backgroun','dColor Red -Foreg','roundColor White ','"Use it at your o','wn networks and/o','r with the networ','k owner''s explici','t permission"
 
